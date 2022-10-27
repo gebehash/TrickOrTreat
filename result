@@ -1,0 +1,23 @@
+
+Run cpplint
+
+Done processing ./tema0.c
+
+Run clang-tidy
+
+12 warnings generated.
+/home/george/Desktop/teme/TrickOrTreat/tema0.c:10:17: error: 7 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+        if (i % 7 == 0 && i % 11 == 0) {
+                ^
+/home/george/Desktop/teme/TrickOrTreat/tema0.c:10:31: error: 11 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+        if (i % 7 == 0 && i % 11 == 0) {
+                              ^
+/home/george/Desktop/teme/TrickOrTreat/tema0.c:15:17: error: 7 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+        if (i % 7 == 0) {
+                ^
+/home/george/Desktop/teme/TrickOrTreat/tema0.c:20:17: error: 11 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+        if (i % 11 == 0) {
+                ^
+Suppressed 8 warnings (8 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+4 warnings treated as errors
