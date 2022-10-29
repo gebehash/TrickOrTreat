@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#define sapte 7
+#define unsprezece 11
 int main() {
     int n = 0;
 
@@ -7,22 +8,37 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        if (i % 7 == 0 && i % 11 == 0) {
-            printf("TrickOrTreat ");
+        if (i % sapte == 0 && i % unsprezece == 0) {
+            if (i != n) {
+                printf("TrickOrTreat ");
+            } else {
+                printf("TrickOrTreat");
+            }
             continue;
         }
 
-        if (i % 7 == 0) {
-            printf("Trick ");
+        if (i % sapte == 0) {
+            if (i != n) {
+                printf("Trick ");
+            } else {
+                printf("Trick");
+            }
             continue;
         }
 
-        if (i % 11 == 0) {
-            printf("Treat ");
+        if (i % unsprezece == 0) {
+            if (i != n) {
+                printf("Treat ");
+            } else {
+                printf("Treat");
+            }
             continue;
         }
-
-        printf("%d ", i);
+        if (i != n) {
+            printf("%d ", i);
+        } else {
+            printf("%d", i);
+        }
     }
 
     return 0;
